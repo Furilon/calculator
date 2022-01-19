@@ -6,11 +6,51 @@ body {
 }
 
 #container {
-    height: 850px;
-    width: 600px;
+    height: 800px;
+    width: 550px;
     border: 3px solid black;
     background-color: rgb(180, 179, 179);
     border-radius: 20px;
     display: grid;
     grid-template: repeat(7, 1fr) / repeat(4, 1fr);
+    gap: 15px 15px;
+    padding: 30px;
 }
+
+.button, #screen {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding: 31px 0;
+}
+
+#screen {
+    grid-area: 1 / 1 / 3 / 5;
+    margin-bottom: 15px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 45px;
+}
+
+#upper-screen {
+    font-size: 30px;
+}
+
+#clear {
+    grid-area: 3 / 1 / 4 / 3;
+    background-color: rgb(255, 184, 184);
+}
+
+#delete {
+    grid-area: 3 / 3 / 4 / 5;
+    background-color: rgb(165, 155, 255);
+}
+
+
+
