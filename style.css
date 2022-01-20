@@ -52,5 +52,7 @@ body {
     background-color: rgb(165, 155, 255);
 }
 
-
+.disabled-button {
+    pointer-events: none;
+}
 
